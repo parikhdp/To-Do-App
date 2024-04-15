@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "To do app with Dhriti",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/app.js -e js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/parikhdp/To-Do-App/issues"
   },
-  "homepage": "https://github.com/parikhdp/To-Do-App#readme"
+  "homepage": "https://github.com/parikhdp/To-Do-App#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "express-validator": "^7.0.1",
+    "mongoose": "^8.3.1",
+    "nodemon": "^3.1.0"
+  }
 }
