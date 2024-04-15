@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "To do app with Dhriti",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parikhdp/To-Do-App.git"
+  },
+  "author": "Dhriti and Miit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/parikhdp/To-Do-App/issues"
+  },
+  "homepage": "https://github.com/parikhdp/To-Do-App#readme"
+}
