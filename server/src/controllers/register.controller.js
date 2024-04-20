@@ -5,7 +5,10 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
 const Register = async (req, res) => {
-  const errors = validationResult(req)
+  const errors = validationResult(req); /*no need to import "registerSchema.js" as in the "api.js" file, the validation is done in the 
+  route itself by calling the registerSchema from the "registerSchema.js" file in the validationSchema folder. 
+  This middleware will check if the request body is valid or not and if it is invalid, 
+  it will send the errors encountered along with the request to this file.*/
   if (errors.isEmpty()) {
     const { name, username, email, password } = req.body;
     const salt = await bcrypt.genSalt(10);

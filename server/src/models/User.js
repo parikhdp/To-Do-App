@@ -1,4 +1,4 @@
-import { Schema, model } from 'mongoose';
+import mongoose, { Schema, model } from 'mongoose';
 const userSchema = new Schema({
     name: {
         type: String
@@ -23,6 +23,11 @@ email: {
     required: true,
     unique: true
 },
+todos:[{
+    type:mongoose.Schema.Types.ObjectId,
+    ref:'Todo',
+},
+],
 date: {
     type: Date,
     default: Date.now}

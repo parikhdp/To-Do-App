@@ -1,5 +1,9 @@
 import { check } from 'express-validator';
 
+/*defining an array of middleware functions using the express-validator library. 
+Each element in the array is a middleware function responsible for validating a specific aspect of the incoming request body.*/
+
+
 export const registerSchema = [
     check('name')
         .trim()
